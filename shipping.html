@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lee's jewelry</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-row w3-large w3-hover-shadow w3-white w3-text-brown">
+      <div class="w3-col s3">
+        <a href="index.html" class="w3-button w3-block"><img src="images/Untitled-2.png" alt="logo" width="200px"></a>
+      </div>
+      <div class="w3-col s3">
+        <a href="materials.html" class="w3-button w3-block">Materials</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="customize.html" class="w3-button w3-block">Customize</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="shipping.html" class="w3-button w3-block">Shipping Process</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Grid -->
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-text-brown w3-border-brown w3-padding-16">Shipping and Packaging</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16 w3-text-brown">
+      <h3>Materials</h3>
+      <p>Shipping out necklaces requires a variety of materials to ensure your necklice arrives safe. In my orders I use a clear jewelry bag, a bubble mailer, gorilla tape, and a stamp to finish it off.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-brown w3-container w3-padding-16">
+      <h3>Processing Time</h3>
+      <p>The time it takes me to package an order varies based on school, afterschool activities, and overall motivation. Overall processing time usually takes one to four days. </p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-brown w3-container w3-padding-16">
+      <h3>Shipping Time</h3>
+      <p>Shipping time normally depends on the distance it takes from me to where the customer lives. An average time for shipping is two to ten days. </p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16 w3-text-brown">
+      <h3>Cost</h3>
+      <p>Although it costs me to pay for shipping materials the Shipping price is free for all customers with every necklace purchase!! Occasionally there will also be coupons and discounts!!
+      </p>
+    </div>
+  </div>
+<p></p>
+<br>
+<div class="w3-container">
+  <div class="w3-display-container mySlides w3-padding">
+    <img src="images/gorilla.jpg" style="width:45%">
+    <img src="images/bubblemail.jpg" style="width:46%">
+    <div class="w3-display-topleft w3-container w3-padding-32">
+    </div>
+  </div>
+
+<br>
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <div class="w3-xlarge w3-section">
+    <p><a href="https://www.instagram.com/racheldrawzz/?hl=en" target="blank"><img src="Images/Untitled-1.png"
+      alt="instagram" width="50" height="50"></a> <a href="https://www.etsy.com/shop/RachelDrawz?ref=search_shop_redirect" target="blank"><img src="Images/etsyblue.png"
+        alt="instagram" width="70" height="50"></a>
+
+  </div>
+</footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

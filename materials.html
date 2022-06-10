@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lee's jewelry</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-row w3-large w3-hover-shadow w3-white w3-text-brown">
+      <div class="w3-col s3">
+        <a href="index.html" class="w3-button w3-block"><img src="images/Untitled-2.png" alt="logo" width="200px"></a>
+      </div>
+      <div class="w3-col s3">
+        <a href="materials.html" class="w3-button w3-block">Materials</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="customize.html" class="w3-button w3-block">Customize</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="shipping.html" class="w3-button w3-block">Shipping Process</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Grid -->
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-text-brown w3-border-brown w3-padding-16">Materials</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16 w3-text-brown">
+      <h3>Beads</h3>
+      <p>Lee's jewelrys uses high quality beads from small 2mm seed beads to 4mm polymer clay beads. Beads come in many colors for a variation of styles, themes, and looks.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-brown w3-container w3-padding-16">
+      <h3>Wire</h3>
+      <p>Wire ranges from stretchy elastic cord to thick beading wire. Wire or cord that is used in necklaces differs based on the type of necklace and customer preference.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-brown w3-container w3-padding-16">
+      <h3>Charms</h3>
+      <p>Many different charms are available for use in diferent necklaces. Examples of avaliabe charms to incorperate are flower charms, varations of smile charms, letters, and  more.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16 w3-text-brown">
+      <h3>Packaging</h3>
+      <p>A lot of supplies goes into packaging orders. Jewelry is packaged so that it is safe on it's journey to your front door. You can read more abou packaging on the shipping page.</p>
+    </div>
+  </div>
+<p></p>
+<div class="w3-container">
+  <div class="w3-display-container mySlides w3-padding">
+    <img src="images/flowerbeads.jpg" style="width:49%">
+    <img src="images/letterbeads.jpg" style="width:49%">
+    <div class="w3-display-topleft w3-container w3-padding-32">
+      <span class="w3-white w3-padding-large w3-animate-bottom">Charms</span>
+    </div>
+  </div>
+  <div class="w3-display-container mySlides w3-padding">
+    <img src="images/seedbeadrainbow.jpg" style="width:47%">
+    <img src="images/polymerclaybeads.jpg" style="width:49%">
+    <div class="w3-display-topleft w3-container w3-padding-32">
+      <span class="w3-white w3-padding-large w3-animate-bottom">Beads</span>
+    </div>
+  </div>
+  <div class="w3-display-container mySlides w3-padding">
+    <img src="images/elasticcord.png" style="width:49%">
+    <img src="images/beadingwire.jpg" style="width:49%">
+    <div class="w3-display-topleft w3-container w3-padding-32">
+      <span class="w3-white w3-padding-large w3-animate-bottom">Wire</span>
+    </div>
+  </div>
+
+  <!-- Slideshow next/previous buttons -->
+  <div class="w3-container w3-brown w3-padding w3-xlarge">
+    <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+    <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+  
+    <div class="w3-center">
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    </div>
+  </div>
+</div>
+<br>
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <div class="w3-xlarge w3-section">
+    <p><a href="https://www.instagram.com/racheldrawzz/?hl=en" target="blank"><img src="Images/Untitled-1.png"
+      alt="instagram" width="50" height="50"></a> <a href="https://www.etsy.com/shop/RachelDrawz?ref=search_shop_redirect" target="blank"><img src="Images/etsyblue.png"
+        alt="instagram" width="70" height="50"></a>
+
+  </div>
+</footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

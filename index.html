@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lee's jewelry</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-hover-shadow w3-white w3-text-brown">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block"><img src="images/Untitled-2.png" alt="logo" width="200px"></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="materials.html" class="w3-button w3-block">Materials</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="customize.html" class="w3-button w3-block">Customize</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="shipping.html" class="w3-button w3-block">Shipping Process</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-center w3-text-brown w3-border-brown">
+    <h3>Necklaces</h3>
+    <p>Color and Style Options with Image Examples Below</p>
+  </div>
+  
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides w3-padding">
+      <img src="images/seedbeads.png" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Seed Bead Necklace</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/flowercharm.png" style="width:100%">
+      <div class="w3-display-middle w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Charm Necklace</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/clay.png" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Clay Bead Necklace</span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-brown w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="plans">
+    <p></p>
+    <br>
+
+    <div class="w3-third w3-margin-bottom w3-text-brown">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-brown w3-xlarge w3-padding-32">Seed Bead Necklaces</li>
+        <li class="w3-padding-16">Random Multicolor</li>
+        <li class="w3-padding-16">Dual Color</li>
+        <li class="w3-padding-16">Three Color</li>
+        <li class="w3-padding-16">One Color</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24 w3-brown">
+          <a class="w3-button w3-white w3-padding-large" href="customize.html" class="w3-button w3-block">Buy</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow w3-text-brown">
+        <li class="w3-brown w3-xlarge w3-padding-32">Charm Necklaces</li>
+        <li class="w3-padding-16">Smile Charms</li>
+        <li class="w3-padding-16">Flower Charms</li>
+        <li class="w3-padding-16">Letter Charms</li>
+        <li class="w3-padding-16">Stone Charms</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 15</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a class="w3-button w3-white w3-padding-large" href="customize.html" class="w3-button w3-block">Buy</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow w3-text-brown">
+        <li class="w3-brown w3-xlarge w3-padding-32">Clay Bead Necklaces</li>
+        <li class="w3-padding-16">Random Multicolor</li>
+        <li class="w3-padding-16">ATLA Inspired</li>
+        <li class="w3-padding-16">Four Color</li>
+        <li class="w3-padding-16">Color and White Alternating</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 20</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a class="w3-button w3-white w3-padding-large" href="customize.html" class="w3-button w3-block">Buy</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+  
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <div class="w3-xlarge w3-section">
+    <p><a href="https://www.instagram.com/racheldrawzz/?hl=en" target="blank"><img src="Images/Untitled-1.png"
+      alt="instagram" width="50" height="50"></a> <a href="https://www.etsy.com/shop/RachelDrawz?ref=search_shop_redirect" target="blank"><img src="Images/etsyblue.png"
+        alt="instagram" width="70" height="50"></a>
+
+  </div>
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
